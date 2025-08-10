@@ -1,0 +1,54 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+develop-eggs/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-file.txt
+
+# Unit test / coverage
+.coverage
+.tox/
+.pytest_cache/
+htmlcov/
+.nox/
+
+# Virtual environment
+.venv/
+env/
+venv/
+ENV/
+
+# MyPy
+.mypy_cache/
+
+# PyInstaller
+#  (These are specific to creating an executable, which you mentioned in your code)
+#  (They contain temporary build files and the final executable)
+# For PyInstaller 4.0+
+*.spec
+# For legacy PyInstaller
+build/
+dist/
+
+# OS and IDE files
+.DS_Store
+.vscode/
+.idea/
+
+# Tkinter-specific
+#  (These are generally for compiled UI files or local settings)
+*.ui
