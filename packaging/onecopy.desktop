@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=onecopy
+Comment=Copy one file reliably with optional elevation
+Exec=onecopy
+Icon=onecopy
+Terminal=false
+Categories=Utility;GTK;
+StartupWMClass=onecopy

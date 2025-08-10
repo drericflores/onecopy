@@ -1,0 +1,23 @@
+# Build AppImage
+
+## Prereqs
+- Ubuntu/Pop!_OS
+- `appimagetool`, `linuxdeploy`, `linuxdeploy-plugin-qt`
+- Python 3.10+, venv
+
+```bash
+# in project root
+python3 -m venv .venv && source .venv/bin/activate
+pip install --upgrade build PyQt5
+python -m build  # creates a wheel and sdist
+
+# Stage into AppDir
+mkdir -p AppDir/usr/bin AppDir/usr/share/applications AppDir/usr/share/icons/hicolor/256x256/apps
+cp dist/*.whl AppDir/usr/bin/
+python -m pip install --prefix "$PWD/AppDir/usr" dist/*.whl
+
+cp packaging/onecopy.desktop AppDir/usr/share/applications/
+cp packaging/onecopy.svg AppDir/usr/share/icons/hicolor/256x256/apps/onecopy.svg
+
+# Bundle Qt with linuxdeploy
+linuxdeploy --appdir AppDir --plugin qt --output appimage

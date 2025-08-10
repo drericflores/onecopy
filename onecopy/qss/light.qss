@@ -1,0 +1,8 @@
+/* Simple light theme */
+QWidget { background: #fafafa; color: #222; }
+QLineEdit, QProgressBar, QMenu, QToolBar, QStatusBar { background: #ffffff; }
+QPushButton { background: #f0f0f0; border: 1px solid #d0d0d0; padding: 6px 10px; border-radius: 6px; }
+QPushButton:hover { background: #e8e8e8; }
+QMenu::item:selected { background: #e0e0e0; }
+QProgressBar::chunk { background: #2f71e1; }
+QCheckBox { spacing: 6px; }

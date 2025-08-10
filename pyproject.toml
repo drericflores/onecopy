@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "onecopy"
+version = "0.1.0"
+description = "A minimal file copy GUI with optional elevation"
+authors = [{ name = "Dr. Eric O. Flores" }]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["PyQt5>=5.15"]
+
+[project.scripts]
+onecopy = "onecopy.app:main"
+
+[tool.setuptools]
+package-dir = {"" = "."}
+packages = ["onecopy"]
+include-package-data = true

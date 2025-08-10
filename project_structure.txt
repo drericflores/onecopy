@@ -1,0 +1,21 @@
+onecopy/
+├─ pyproject.toml
+├─ README.md
+├─ onecopy/
+│  ├─ __init__.py
+│  ├─ __main__.py
+│  ├─ app.py
+│  ├─ main_window.py
+│  ├─ workers.py
+│  ├─ io.py
+│  ├─ elevated_copy.py
+│  ├─ utils.py
+│  └─ qss/
+│     ├─ dark.qss
+│     └─ light.qss
+├─ packaging/
+│  ├─ onecopy.desktop
+│  ├─ onecopy.svg
+│  ├─ policy/xyz.onecopy.policy
+│  └─ appimage/README-AppImage.md
+└─ tests/manual-qa-checklist.md
